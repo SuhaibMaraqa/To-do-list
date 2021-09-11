@@ -3,7 +3,7 @@ html {
   background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   min-height: 1000px;
-  font-family: 'helvetica neue';
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -26,6 +26,8 @@ h1 {
 }
 
 .item {
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
   min-height: 70px;
   display: flex;
   align-items: center;
@@ -87,6 +89,8 @@ input[type="text"]:focus {
 
 ::placeholder {
   color: #343633;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 500;
 }
 
 footer {
