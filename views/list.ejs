@@ -1,20 +1,23 @@
 <%-include('header.ejs')%>
 
-     <h1><%=today%></h1>
+     <div class="box" id="heading">
+          <h1><%=today%></h1>
+     </div>
      
-     <% newItems.forEach(newItem => { %>
-          <div class="item">
-            <input type="checkbox">
-            <p><%= newItem %></p>
-          </div>
-     <% }); %>
+     <div class="box">
+          
+               <% newItems.forEach(newItem => { %>
+                    <div class="item">
+                         <input type="checkbox" name="" id="">
+                         <p><%=newItem%></p>
+                    </div>
+               <% }); %>
 
-          
+          <form class="item" action="/" method="post">
+               <input type="text" name="text" placeholder="New Item" autocomplete="off">
+               <button type="submit" name="button">+</button>
+          </form>
+     </div>
       
-          
-     <form action="/" method="POST">
-          <input type="text" name="text" >
-          <button type="submit" name="button">Add</button>
-     </form>
 
 <%-include('footer.ejs')%>
