@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 const password = process.env.password;
 
-mongoose.connect("mongodb+srv://admin-suhaib:" + password + "@cluster0.uc2sr.mongodb.net/todolistDBB");
+mongoose.connect("mongodb+srv://admin-suhaib:WiN7RAwtZbt3cnr8@cluster0.uc2sr.mongodb.net/todolistDBB");
 
 const itemSchema = new mongoose.Schema({
      name: String
